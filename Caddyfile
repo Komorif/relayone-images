@@ -1,0 +1,32 @@
+{
+	admin off
+	http_port {$HTTP_PORT}
+	https_port {$HTTPS_PORT}
+	servers {
+		protocols h1 h2
+	}
+}
+https://{$SITE_DOMAIN} {
+	bind {$HTTPS_BIND}
+	root * /srv
+	encode zstd gzip
+	tls {
+		issuer acme {
+			dir https://acme-v02.api.letsencrypt.org/directory
+			disable_tlsalpn_challenge
+		}
+	}
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		Content-Security-Policy "default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"
+	}
+	@assets path /assets/*
+	header @assets Cache-Control "public, max-age=604800"
+	file_server
+	log
+}
+http://{$SITE_DOMAIN} {
+	bind 0.0.0.0
+	redir https://{$SITE_DOMAIN}{uri} 308
+}

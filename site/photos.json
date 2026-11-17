@@ -1,0 +1,62 @@
+[
+  {
+    "name": "alpine",
+    "title": "Выше облаков",
+    "category": "Природа",
+    "source": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+  },
+  {
+    "name": "forest",
+    "title": "Тихий лес",
+    "category": "Природа",
+    "source": "https://images.unsplash.com/photo-1448375240586-882707db888b"
+  },
+  {
+    "name": "lake",
+    "title": "Зеркальная гладь",
+    "category": "Природа",
+    "source": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+  },
+  {
+    "name": "coast",
+    "title": "Дыхание океана",
+    "category": "Природа",
+    "source": "https://images.unsplash.com/photo-1518837695005-2083093ee35b"
+  },
+  {
+    "name": "desert",
+    "title": "Линии песка",
+    "category": "Природа",
+    "source": "https://images.unsplash.com/photo-1509316785289-025f5b846b35"
+  },
+  {
+    "name": "city",
+    "title": "После заката",
+    "category": "Город",
+    "source": "https://images.unsplash.com/photo-1519501025264-65ba15a82390"
+  },
+  {
+    "name": "architecture",
+    "title": "Геометрия света",
+    "category": "Архитектура",
+    "source": "https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+  },
+  {
+    "name": "skyline",
+    "title": "Слои тишины",
+    "category": "Природа",
+    "source": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05"
+  },
+  {
+    "name": "street",
+    "title": "Ритм улиц",
+    "category": "Город",
+    "source": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000"
+  },
+  {
+    "name": "building",
+    "title": "Новая перспектива",
+    "category": "Архитектура",
+    "source": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2"
+  }
+]

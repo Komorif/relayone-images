@@ -1,0 +1,34 @@
+# Per-server settings and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.token
+*credentials*
+*private*
+*client*.json
+server.json
+keypair
+uuid
+profile.txt
+compose.override.yaml
+compose.override.yml
+Caddyfile.local
+
+# Runtime data
+/data/
+/config/
+/certs/
+/secrets/
+/backups/
+*.log
+
+# Local tooling
+node_modules/
+.DS_Store
+._*
